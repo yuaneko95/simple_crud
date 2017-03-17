@@ -7,9 +7,9 @@
 	$row = mysqli_num_rows($SQL);
 
 	if ($row > 0 ) {
-		echo '<script>alert("data berhasil di hapus")</script>';
-	} else {
 		echo '<script>alert("data gagal di hapus")</script>';
+	} else {
+		echo '<script>alert("data berhasil di hapus")</script>';
 	}
 ?>
 <meta http-equiv="refresh" content="0;URL='index.php'" />

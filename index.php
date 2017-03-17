@@ -36,7 +36,7 @@
 			<tr>
 				<td>alamat</td>
 				<td>:</td>
-				<td><input type="text" name="alamat" value="" placeholder=""></td>
+				<td style="color: red"><input type="text" name="alamat" value="" placeholder=""><?php echo ($error['alamat']); ?></td>
 			</tr>
 			<tr>
 				<td><input type="submit" name="simpan" value="simpan"></td>
@@ -65,13 +65,14 @@
 				<td><?php echo $no; ?></td>
 				<td><?php echo $ambil_data_dr_query['nama']; ?></td>
 				<td><?php echo $ambil_data_dr_query['alamat']; ?></td>
-				<td>edit</td>
+				<td><a href="formedit.php?&id=<?php echo $ambil_data_dr_query['id']; ?>" >edit</a></td>
 				<td><a href="delete.php?&id=<?php echo $ambil_data_dr_query['id']; ?>" >hapus</a></td>
 			</tr>
 			<?php } ?> <!-- akhir while -->
 		</table>
-	
 	</form>
 	<!-- akhir form lihat data -->
+
+	
 </body>
 </html>
